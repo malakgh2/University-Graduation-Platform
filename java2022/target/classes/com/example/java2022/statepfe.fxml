@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="419.0" style="-fx-background-color: #B6D0E2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java2022.statepfeController">
+   <top>
+      <AnchorPane prefHeight="154.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logo" fitHeight="158.0" fitWidth="269.0" layoutX="63.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="8.0" layoutY="11.0" mnemonicParsing="false" onAction="#backButonOnAction" text="&lt;&lt;&lt;" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="mat" layoutX="322.0" layoutY="32.0" prefHeight="26.0" prefWidth="78.0" promptText="Matricule" />
+            <Button fx:id="search" layoutX="347.0" layoutY="63.0" mnemonicParsing="false" onAction="#searcheck" prefHeight="26.0" prefWidth="58.0" text="Search" />
+            <Label fx:id="idcheck" layoutX="134.0" layoutY="5.0" prefHeight="18.0" prefWidth="262.0" textFill="#ff5151" />
+            <Label fx:id="etat" layoutX="21.0" layoutY="224.0" text="Your Project State :" textFill="#ef5f5f">
+               <font>
+                  <Font name="Franklin Gothic Demi Cond" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="269.0" prefHeight="24.0" prefWidth="126.0" text="Your Grade :" textFill="#e86666">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="grade" layoutX="146.0" layoutY="270.0" prefHeight="26.0" prefWidth="59.0">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="state" layoutX="181.0" layoutY="227.0" prefHeight="20.0" prefWidth="215.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="luck" layoutX="11.0" layoutY="182.0" prefHeight="34.0" prefWidth="384.0" textFill="#236139">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="pfee" fitHeight="96.0" fitWidth="117.0" layoutX="151.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/pfe.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="rapi" layoutX="11.0" layoutY="163.0" prefHeight="18.0" prefWidth="352.0" />
+            <Label fx:id="enca" layoutX="14.0" layoutY="144.0" prefHeight="18.0" prefWidth="275.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

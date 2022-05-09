@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="431.0" style="-fx-background-color: #B6D0E2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java2022.ajoutencController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listvois" editable="true" layoutX="175.0" layoutY="28.0" prefHeight="270.0" prefWidth="244.0" />
+            <Button fx:id="ajout" layoutX="29.0" layoutY="174.0" mnemonicParsing="false" onAction="#ajt" prefHeight="30.0" prefWidth="66.0" text="Ajout " />
+            <TextField fx:id="pfeidtxt" layoutX="21.0" layoutY="50.0" prefHeight="26.0" prefWidth="133.0" promptText="PFE ID" />
+            <TextField fx:id="profidtxt" layoutX="21.0" layoutY="90.0" prefHeight="26.0" prefWidth="133.0" promptText="Professor ID" />
+            <TextField fx:id="email" layoutX="21.0" layoutY="130.0" prefHeight="26.0" prefWidth="136.0" promptText="Email" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="154.0" prefWidth="431.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logo" fitHeight="92.0" fitWidth="208.0" layoutX="110.0" layoutY="17.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../img/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#backButonOnAction" text="&lt;&lt;&lt;" />
+            <ChoiceBox fx:id="choir" layoutX="294.0" layoutY="139.0" onDragDetected="#showlistt" onMouseClicked="#showlistt" onMouseDragged="#showlistt" prefHeight="26.0" prefWidth="122.0" />
+            <Label fx:id="check" layoutX="206.0" layoutY="118.0" prefHeight="18.0" prefWidth="201.0" textFill="#c73838" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
